@@ -7,6 +7,7 @@ import {
   Show,
   UserButton,
 } from "@clerk/nextjs";
+import { shadcn } from "@clerk/ui/themes";
 import { Button } from "@/components/ui/button";
 import "./globals.css";
 
@@ -36,7 +37,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col">
-        <ClerkProvider>
+        <ClerkProvider appearance={{ theme: shadcn }}>
           <header>
             <Show when="signed-out">
               <SignInButton mode="modal">
