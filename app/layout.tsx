@@ -38,7 +38,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ClerkProvider appearance={{ theme: shadcn }}>
-          <header>
+          <header className="flex items-center gap-2 px-4 pt-4">
             <Show when="signed-out">
               <SignInButton mode="modal">
                 <Button variant="ghost">Sign In</Button>
