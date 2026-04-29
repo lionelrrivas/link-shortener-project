@@ -3,6 +3,7 @@ import { redirect } from "next/navigation"
 import { getLinksByUserId } from "@/data/links"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CreateLinkDialog } from "./create-link-dialog"
+import { LinkActions } from "./link-actions"
 
 export default async function DashboardPage() {
     const { userId } = await auth();
@@ -26,10 +27,11 @@ export default async function DashboardPage() {
                     {links.map((link) => (
                         <li key={link.id}>
                             <Card>
-                                <CardHeader>
+                                <CardHeader className="flex flex-row items-start justify-between gap-2">
                                     <CardTitle className="text-base font-medium">
                                         /go/{link.slug}
                                     </CardTitle>
+                                    <LinkActions link={link} />
                                 </CardHeader>
                                 <CardContent>
                                     <p className="text-sm text-muted-foreground truncate">

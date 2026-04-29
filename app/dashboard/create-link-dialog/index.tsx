@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useTransition } from 'react'
+import React, { useRef, useState, useTransition } from 'react'
 import { PlusIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
@@ -27,7 +27,7 @@ export function CreateLinkDialog() {
     if (!next) setError(null)
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: Parameters<NonNullable<React.ComponentProps<'form'>['onSubmit']>>[0]) {
     e.preventDefault()
     setError(null)
 
