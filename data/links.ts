@@ -2,6 +2,11 @@ import { db } from '@/db';
 import { links, type Link, type NewLink } from '@/db/schema';
 import { and, desc, eq } from 'drizzle-orm';
 
+export async function getLinkBySlug(slug: string): Promise<Link | null> {
+  const [link] = await db.select().from(links).where(eq(links.slug, slug));
+  return link ?? null;
+}
+
 export async function getLinksByUserId(userId: string): Promise<Link[]> {
   return db.select().from(links).where(eq(links.userId, userId)).orderBy(desc(links.updatedAt));
 }
