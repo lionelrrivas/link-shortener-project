@@ -1,5 +1,5 @@
 ---
-agent: 'instructions-generator'
+agent: instructions-generator
 ---
 Take the information provided and generate an agent instructions `.md` file for the `/docs/` directory. 
 If a `.md` file name is provided, use it. Otherwise, generate a file name based on the topic.

@@ -1,3 +1,10 @@
+---
+description: >
+  Read this before implementing or modifying any authentication-related code in the project. This document outlines the 
+  rules and best practices for handling user authentication using Clerk in this Next.js application. Adhering to these 
+  guidelines will ensure a consistent, secure, and user-friendly authentication experience across the app.
+---
+
 # Authentication — Agent Instructions
 
 ## Overview

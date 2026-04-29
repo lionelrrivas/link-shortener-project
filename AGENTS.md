@@ -26,34 +26,7 @@ This is a **full-stack link shortener web application** built with Next.js 16 (A
 ---
 
 This file is the root instructions file for LLMs working in this codebase.
-Topic-specific instructions live in `/docs/`.
 
 ---
-
-## ⚠️ CRITICAL — Read `/docs/` Files Before Writing ANY Code
-
-> **This is a hard requirement. There are no exceptions.**
-
-Before writing, editing, or generating **any** code in this project, you **MUST** read every `/docs/` file that is relevant to the domain you are working in.
-
-- Do **not** rely on prior knowledge, training data, or assumptions about how libraries work.
-- Do **not** write a single line of code until you have read the applicable doc(s).
-- This project uses specific conventions, versions with breaking changes, and strict rules that **override** any defaults you might assume.
-
-Skipping this step **will** produce incorrect, non-compliant code that violates project standards.
-
-**Checklist before writing code:**
-- [ ] Identified which domain(s) the task touches (auth, UI, database, routing, etc.)
-- [ ] Opened and fully read each relevant `/docs/` file
-- [ ] Confirmed your approach matches the rules and patterns in those docs
-
----
-
-## Docs Index
-
-| File | Domain | Read this before… |
-|---|---|---|
-| [`docs/auth.md`](docs/auth.md) | Authentication — Clerk setup, protected routes, modal sign-in/sign-up | Any auth, sign-in/sign-up, session, or route protection work |
-| [`docs/ui.md`](docs/ui.md) | UI Components — Shadcn UI | Adding, editing, or styling any UI component |
 
 

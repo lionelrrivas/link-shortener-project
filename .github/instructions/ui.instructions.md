@@ -1,3 +1,10 @@
+---
+description: >
+  Read this before implementing or modifying any UI-related code in the project. This document outlines the rules and 
+  best practices for building user interfaces using Shadcn UI components in this Next.js application. 
+  Adhering to these guidelines will ensure a consistent, accessible, and visually cohesive UI across the app.
+---
+
 # UI Components — Agent Instructions
 
 ## Overview
