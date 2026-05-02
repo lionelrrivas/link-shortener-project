@@ -42,7 +42,7 @@ export default async function Home() {
         <div className="flex flex-col items-center gap-4">
           <h1 className="max-w-2xl text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
             Shorten links.{" "}
-            <span className="text-muted-foreground">Share smarter.</span>
+            <span className="text-primary">Share smarter.</span>
           </h1>
           <p className="max-w-xl text-lg text-muted-foreground">
             Create short, branded links with custom slugs, track them in your
